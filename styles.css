@@ -169,8 +169,14 @@ span {
         letter-spacing: 0.25px;       
     }
 
+    .share-text {
+        margin-left: 16px;
+        margin-right: 161px;
+    }
+
     .share {
         margin-top: 20px;
+        justify-content: start;
     }
 
     .share-socials {
