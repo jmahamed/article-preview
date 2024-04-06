@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --Very-Blue: hsl(217, 19%, 35%);
+    --Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Blue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;   
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Light-Blue);
+}
+
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 327px;
+    height: 512px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.50);
+}
+
+.card-text {
+    height: 256px;
+    width: 263px; 
+    padding-top: 36px;
+}
+
+h1 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: 0.2px;
+    color: var(--Very-Blue);
+}
+
+p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    letter-spacing: 0.122px;
+    margin-top: 12px;
+    color: var(--Dark-Blue);
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 32px;
+}
+
+h3 {
+   font-size: 13px; 
+   line-height: 20px;
+   letter-spacing: 0.122px;
+   color: var(--Very-Blue);
+}
+
+span {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.122px;
+    color: var(--Grayish-Blue);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.share img:hover {
+    cursor: pointer;
+    fill: var(--Dark-Blue);
+}
+
+.drawers {
+    width: 327px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: none;
+    background-image: url('./images/drawers.png');
+    background-position-y: -246px;
+}
+
+.share-socials {
+   display: none;
+   position: absolute;
+   bottom: 107px;
+   align-items: center;
+   padding-left: 32px;
+   width: 327px;
+   height: 64px;
+   background-color: var(--Very-Blue);
+   border-radius: 0 0 10px 10px;
+}
+
+.share-socials span {
+    letter-spacing: 5px;
+    color: var(--Grayish-Blue)
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 92px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 56px;
+}
+
+.share-socials img:hover {
+    cursor: pointer;
+}
+
+/* desktop */
+
+@media screen and (min-width:1200px) {
+    .card {
+        flex-direction: row;
+        width: 730px;
+        height: 280px;
+    }
+
+    .drawers {
+        width: 285px;
+        height: 280px;
+        background-position-y: -228px;
+        background-size: 120%;
+        border-radius: 10px 0 0px 10px;
+    }
+
+    .card-text {
+        width: 365px;
+        height: 216px;
+        padding-top: 0;
+        margin-left: 40px;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; /* 140% */
+        letter-spacing: 0.25px;       
+    }
+
+    .share {
+        margin-top: 20px;
+    }
+
+    .share-socials {
+        border-radius: 10px;
+        width: 248px;
+        height: 55px;
+        padding-left: 37px;
+        bottom: 318px;
+        left: 955px;
+    }
+
+    .share-arrow {
+        position: absolute;
+        width: 24px;
+        background-color: var(--Very-Blue);
+        height: 24px;
+        bottom: -10px;
+        right: 115px;
+        transform: rotate(45deg);
+    }
+
+    #share-img {
+        display: none;
+    }
+
+    .icons {
+        margin-right: 0;
+    }
+
+
+}
