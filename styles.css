@@ -103,6 +103,7 @@ span {
     background-repeat: none;
     background-image: url('./images/drawers.png');
     background-position-y: -246px;
+    border-radius: 10px 10px 0 0;
 }
 
 .share-socials {
