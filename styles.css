@@ -109,7 +109,7 @@ span {
 .share-socials {
    display: none;
    position: absolute;
-   bottom: 198px;
+   bottom: 0px;
    align-items: center;
    padding-left: 32px;
    width: 327px;
@@ -185,8 +185,8 @@ span {
         width: 248px;
         height: 55px;
         padding-left: 37px;
-        bottom: 408px;
-        left: 1145px;
+        bottom: 97px;
+        right: -66px;
     }
 
     .share-arrow {
